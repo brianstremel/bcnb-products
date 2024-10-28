@@ -9,7 +9,6 @@ A Spring Boot application that manages product prices with time-based price vari
 - [API Documentation](#api-documentation)
 - [Getting Started](#getting-started)
 - [Testing](#testing)
-- [Postman Collection](#postman-collection)
 
 ## Overview
 
@@ -23,7 +22,6 @@ This service provides REST APIs to manage product prices across different time p
 ## Architecture
 
 ### Hexagonal Architecture
-```mermaid
 ```mermaid
 graph TD
     %% External actors/adapters
@@ -67,17 +65,6 @@ graph TD
     PP -.-> PPS
     PPRVQ -.-> PPS
     PPRSV -.-> PPS
-    
-    %% Styling
-    classDef primary fill:#f8f8f8,stroke:#333,stroke-width:1px
-    classDef secondary fill:#f8f8f8,stroke:#333,stroke-width:1px
-    classDef domain fill:#f8f8f8,stroke:#333,stroke-width:1px
-    classDef external fill:#f8f8f8,stroke:#333,stroke-width:1px
-    
-    class PC primary
-    class PR secondary
-    class PP,PPRVQ,PPRSV domain
-    class REST,DB external
 ```
 
 ### Database Schema
@@ -176,14 +163,3 @@ Run tests using:
 ```bash
 ./gradlew test
 ```
-
-## Postman Collection
-
-[Link to your Postman Collection]
-
-The Postman collection includes:
-- Environment variables
-- Request examples
-- Test scenarios
-
-Import the collection from the `postman` directory in this repository.
